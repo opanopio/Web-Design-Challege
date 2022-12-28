@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Comparison</title>
 
-    <!-- Bootstrap Stylesheet -->
+    <!-- Boostrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!-- Our own CSS stylesheet -->
@@ -32,7 +32,7 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Plots
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./visualizations/temp.html">Max Temperature</a></li>
                 <li><a class="dropdown-item" href="./visualizations/humidity.html">Humidity</a></li>
                 <li><a class="dropdown-item" href="./visualizations/cloudiness.html">Cloudiness</a></li>
@@ -56,69 +56,68 @@
 
     <!-- Start of container -->
     <div class="container">
-      <div class="row">
-        <!-- Start of Summary Area -->
-        <div class="col col-sm-12 col-md-7">
-          <div class="box">
-            <h1>Summary: Latitude vs. X</h1>
+      <div class="row white-bg">
+        <div class="col col-12">
+          <h1>Comparison: Latitude vs X</h1>
             <hr class="titlehr">
-              <img src="./assets/images/Fig1.png" alt="" width="200px" height="200px" class="float-start">
-              <p>
-                The purpose of this project was to analyze how distance from the equator impacts weather. In order to 
-                complete this analysis, we pulled data from the OpenWeatherMap API to assemble a dataset consisting of over
-                500 cities.
-              </p>
-              <p>
-                Once the datset was assembled, we examined the relationship between distance from the equator (latitude) and various weather
-                factors including temperature, cloudiness, humidity, and wind speed. This website contains the source data and visualizations
-                of the four main factors that were explored. Each of the main visualization pages also contains a brief description of any 
-                observed trends and correlations.
-              </p>
-          </div>
+          <p>Click any plot to get an in-depth analysis.</p>
+          <br>
         </div>
-        <!-- End of Summary Area -->
-    
-        <!-- Start of Visualizations imageNav Area -->
-        <div class="col col-sm-12 col-md-4">
-          <div class="box">
-            <h2>Visualizations</h2>
-            <hr>
-            <a href="./visualizations/temp.html">
-              <img src="./assets/images/Fig1.png" alt="City Latitude vs. Max Temp" width="150px" height="150px">
-            </a>
 
+      <div class="row">
+        <div class="col col-md-6 col-s-12">
+          <h3>vs Max Temperature</h3>
+          <p class="centerimages">
+            <a class="centerimages" href="./visualizations/temp.html">
+            <img class="comparisonimg" src="./assets/images/Fig1.png" width="390px">
+            </a>
+          </p>
+        </div>
+
+        <hr class="comparisonhr">
+
+        <div class="col col-md-6 col-s-12">
+          <h3>vs Humidity</h3>
+          <p class="centerimages">
             <a href="./visualizations/humidity.html">
-              <img src="./assets/images/Fig2.png" alt="City Latitude vs. Humidity" width="150px" height="150px">
+            <img class="comparisonimg" src="./assets/images/Fig2.png" width="390px">
             </a>
-
-            <a href="./visualizations/cloudiness.html">
-              <img src="./assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" width="150px" height="150px">
-            </a>
-
-            <a href="./visualizations/wind.html">
-              <img src="./assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" width="150px" height="150px">
-            </a>
-
-          </div>
+          </p>
         </div>
-        <!-- End of the Visualizations imageNav Area -->
+
+        <hr class="comparisonhr">
+
+        <div class="col col-md-6 col-s-12">
+          <h3>vs Cloudiness</h3>
+          <p class="centerimages">
+            <a href="./visualizations/cloudiness.html">
+            <img class="comparisonimg" class="mainimages" src="./assets/images/Fig3.png" width="390px">
+            </a>
+          </p>
+        </div>
+
+        <hr class="comparisonhr">
+
+        <div class="col col-md-6 col-s-12">
+          <h3>vs Wind Speed</h3>
+          <p class="centerimages">
+            <a href="./visualizations/wind.html">
+            <img class="comparisonimg" src="./assets/images/Fig4.png" width="390px">
+            </a>
+          </p>
+        </div>
+        
+
       </div>
-    <!-- End of container -->
     </div>
+
+    <!-- End of container -->
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
-    <!-- JS for HTML include-->
-    <script>
-    includeHTML();
-    </script>
-  
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
 
 </html>
